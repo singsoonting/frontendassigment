@@ -1,0 +1,133 @@
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: 'Pacifico', cursive,Arial;
+}
+
+#feedbackDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    background-color:antiquewhite;
+}
+
+#FeedbackForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 90%;
+    background-color:#ffecce;
+    border-radius: 30px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#FormDiv {
+    width: 80%;
+}
+
+.form-label{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize:none;
+    height: 150px;
+}
+
+#feedbackDiv button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #e55820;
+    color:white;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+#rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#rating span {
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s, color 0.5s;
+}
+
+#rating span:hover,#rating span:hover ~ span {
+    color: gold;
+    transform: scale(1.2);
+}
+
+#rating .selected {
+    color: gold;
+}
+
+a.logo {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+a.logo:visited,
+a.logo:hover,
+a.logo:active {
+  text-decoration: none !important;
+  color: #ffffff !important; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(117, 96, 96, 0.5) !important;
+  font-style: italic;
+}
+
+@media (max-width:768px){
+
+    #feedbackDiv{
+        margin-top:30px;
+        padding-bottom: 30px;
+    }
+
+    #FeedbackForm{
+        max-width: 90%;
+        padding:12px;
+    }
+
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #rating {
+        font-size: 40px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}

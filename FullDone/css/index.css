@@ -1,0 +1,315 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 20%);
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    color: black; 
+    font-size: 25px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px; 
+    display: inline-block; 
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: hsl(205, 87%, 29%);
+    color: white;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: hsl(205, 87%, 39%);
+}
+
+/* Hero Banner */
+.hero-banner {
+    margin-top: 85px;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: max-content;
+    background-image: url(/image/home.jpg);
+    z-index: 1;
+}
+
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.603);
+    z-index: -1;
+}
+
+.hero-content {
+    font-size: 32px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.streetfood-program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;    
+} 
+
+.streetfood-program::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.841);
+    z-index: -1;
+}
+
+.programs-slider {
+    display: flex;
+    overflow: hidden;       
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+/* Contact Us Section */
+#fcontact {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: max-content;
+    background-image: url(/image/contactbg.jpg);
+    z-index: 1;
+}
+
+#fcontact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.784);
+    z-index: -1;
+}
+
+.fcontact.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: rgb(222, 232, 242);
+    margin-bottom: 2rem;
+}
+
+.fcontact-form {
+    background-color: #0066cc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f8ff;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #ff5733;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #e04e1e;
+}
+
+/* Title and Explanation */
+.title {
+    font-size: 2.5rem;
+    color: #92cc00;
+    margin-bottom: 1.5rem;
+}
+
+.explanation {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.button button {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.button button[type="reset"] {
+    background-color: #ff5733;
+}
+
+.button button[type="submit"] {
+    background-color: #0066cc;
+}
+
+.button button:hover {
+    opacity: 0.9;
+}
+
+/* Output Section */
+.output {
+    margin-top: 2rem;
+}
+
+.output h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.output span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.output p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-top: 1rem;
+}
+
+#streetfood h2 {
+    background: rgba(255, 255, 255, 0.727);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+

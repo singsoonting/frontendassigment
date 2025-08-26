@@ -1,0 +1,30 @@
+[
+  { 
+    "title": "Penang Street Food Festival", 
+    "date": "5-7 Sept 2025", 
+    "location": "Penang", 
+    "desc": "🎉 Join the vibrant celebration of Penang's hawker culture! Enjoy over 100 stalls offering local favorites like Char Kway Teow, Penang Laksa, and Cendol, with live performances and cultural showcases throughout the weekend.",
+    "img": "./image/fest1.jpg"
+  },
+  { 
+    "title": "KL Night Market Promo", 
+    "date": "12 Sept 2025", 
+    "location": "Kuala Lumpur", 
+    "desc": "🌙 Experience the bustling night markets of Kuala Lumpur with an exclusive Buy 1 Free 1 Satay promotion! Explore stalls featuring grilled delights, innovative street desserts, and local beverages in a lively night-time atmosphere.",
+    "img": "./image/fest2.jpg"
+  },
+  { 
+    "title": "Ipoh Food Carnival", 
+    "date": "20 Sept 2025", 
+    "location": "Ipoh", 
+    "desc": "🔥 Taste the authentic flavors of Ipoh! From the famous Ipoh white coffee to bean sprouts chicken and other street delicacies, enjoy food tasting, cooking demos, and cultural performances all day long.",
+    "img": "./image/fest3.jpg"
+  },
+  { 
+    "title": "Malacca Heritage Food Festival", 
+    "date": "28 Sept 2025", 
+    "location": "Malacca", 
+    "desc": "🎉 Step back in time with Malacca’s heritage street food festival. Sample Peranakan dishes, Nyonya kuih, cendol and local seafood while enjoying historical tours, live music, and workshops highlighting traditional cooking techniques.",
+    "img": "./image/fest4.jpg"
+  }
+]

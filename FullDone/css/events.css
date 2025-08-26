@@ -1,0 +1,88 @@
+.events h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #222 !important;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2; /* keep heading above other content */
+}
+
+/* Ensure heading always shows above cards */
+.heading-wrapper {
+  position: relative;
+  z-index: 5; /* stays above images/cards */
+  background: #fff; /* white background ensures text never blends in */
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+
+/* Ensure event lists don't overlap heading */
+#eventsList,
+#pastEventsList {
+  margin-top: 20px; /* spacing between heading and cards */
+}
+
+/* Card Styling */
+.events .card {
+  border-radius: 12px;
+  background-color: #fff;
+  color: #222; /* default dark text */
+  transition: transform 0.2s ease-in-out;
+}
+
+.events .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.events .card h5 {
+  font-size: 1.3rem;
+  color: #d35400; /* food-theme orange */
+  margin-bottom: 10px;
+}
+
+.events .card p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+
+/* Past Festivals Card Images */
+.events .card img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* YouTube button */
+.events .btn-danger {
+  background-color: #cc0000; /* YouTube red */
+  border: none;
+}
+.events .btn-danger:hover {
+  background-color: #990000;
+}
+
+/* Section-specific headings */
+.upcoming-events h2 {
+  color: #222;
+}
+
+.past-events h2 {
+  color: #222;
+}
+
+body {
+  padding-top: 75px; 
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none !important; /* <- override bootstrap */
+}

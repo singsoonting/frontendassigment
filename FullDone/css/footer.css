@@ -1,0 +1,96 @@
+footer {
+  background-color:orange;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+footer h1, footer h2 {
+  margin: 4px 0;
+  color: #fff;
+}
+
+footer img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.contact-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ❗ allow wrapping */
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.contact-info h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-info h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/*🔽 Responsive Design for mobile (width <= 768px) */ 
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .contact-info h1,
+  .contact-info h2 {
+    text-align: center;
+  }
+
+  
+}

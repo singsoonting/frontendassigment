@@ -1,0 +1,53 @@
+.faq-section {
+  background: #fffaf5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.faq-icon {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #d35400;
+}
+
+.accordion-button {
+  text-decoration: none !important; 
+  color: #333;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  text-decoration: none !important;
+}
+
+.accordion-button:hover {
+  text-decoration: none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #d35400;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #555;
+}
+
+.accordion-collapse {
+  transition: all 0.4s ease-in-out;
+}
+body {
+  padding-top: 60px; 
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none !important; /* <- override bootstrap */
+}

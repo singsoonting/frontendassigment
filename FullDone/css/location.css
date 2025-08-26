@@ -1,0 +1,250 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fffaf0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #e67e22;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.region-section {
+  margin-bottom: 50px;
+}
+
+.region-title {
+  font-size: 1.8rem;
+  color: #e67e22;
+  border-bottom: 3px solid #e67e22;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.location-card {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  position: relative;
+}
+
+.location-card img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.location-info {
+  flex-grow: 1;
+}
+
+.location-info h3 {
+  margin: 0 0 8px 0;
+  color: #e67e22;
+  font-size: 1.3rem;
+}
+
+.location-info p {
+  margin: 0 0 6px 0;
+  color: #555;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.location-address a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.location-address a:hover {
+  text-decoration: underline;
+}
+
+.food-time {
+  display: flex;
+  gap: 15px;
+  margin: 8px 0;
+}
+
+.food-time div {
+  background: #f8e8d8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #d35400;
+}
+
+.food-recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.food-recommendations span {
+  background: #e6f7ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #2980b9;
+}
+
+.highlight {
+  background: #ffe6e6 !important;
+  color: #e74c3c !important;
+  font-weight: bold;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+.bookmark-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  outline: none;
+  z-index: 1; 
+  padding: 5px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-btn.bookmarked {
+  color: #e74c3c;
+}
+
+.bookmark-btn:hover {
+  background-color: rgba(255,255,255,0.9);
+}
+
+
+@media (max-width: 768px) {
+  .location-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .location-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .region-title {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .location-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .location-info p,
+  .location-address a {
+    font-size: 0.9rem;
+  }
+
+  .food-time div,
+  .food-recommendations span {
+    font-size: 0.8rem;
+    padding: 3px 7px;
+  }
+
+  .bookmark-btn {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .region-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .location-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .location-info p,
+  .location-address a {
+    font-size: 0.85rem;
+  }
+
+  .food-time div,
+  .food-recommendations span {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+  }
+
+  .bookmark-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+    top: 6px;
+    right: 6px;
+  }
+
+  .location-card {
+    padding: 12px;
+    gap: 15px;
+  }
+}
+
+body {
+  padding-top: 100px; 
+}
