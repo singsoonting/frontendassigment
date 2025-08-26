@@ -41,7 +41,7 @@ const foods = [
   },
   {
     name: "Laksa",
-    img: "image/laksa.jpg",
+    img: "image/Laksa.jpg",
     desc: "A spicy noodle soup with coconut milk or sour asam base, filled with prawns, fish, tofu, and herbs.",
     link: "https://en.wikipedia.org/wiki/Laksa"
   },
@@ -295,3 +295,4 @@ foods.forEach((food) => {
   container.appendChild(card);
 
 });
+
